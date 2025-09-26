@@ -1,0 +1,7 @@
+*.txt
+*.pyc
+
+/cgp.egg-info
+/CGA.egg-info
+
+Computational_geometry.egg-info/PKG-INFO
