@@ -1,7 +1,7 @@
 """
 Filename: slow_convex_hull.py
 Author: William Bowley
-Version: 1.4
+Version: 0.1
 Date: 2025-09-26
 
 Description:
@@ -54,14 +54,14 @@ def slow_convex_hull(
     return order_clockwise(edges)
 
 
-points = [
-    Point(0, 0),
-    Point(1, 0),
-    Point(0, 1),
-    Point(1, 1),
-    Point(0.5, 0.5),
-    Point(0.2, 0.8)
-]
-
-hull = slow_convex_hull(points)
-print("Convex Hull:", hull)
+if __name__ == "__main__":
+    points = [
+        Point(0, 0),
+        Point(1, 0),
+        Point(0, 1),
+        Point(1, 1),
+        Point(0.5, 0.5),
+        Point(0.2, 0.8)
+    ]
+    output = slow_convex_hull(points)
+    print("Convex Hull:", output)
