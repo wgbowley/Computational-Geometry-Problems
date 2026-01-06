@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: cga
+Version: 0.1
+Summary: library of computational geometry implementations
+Author: William Bowley
+Author-email: wgrantbowley@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.8
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary

@@ -31,6 +31,13 @@ class Line:
     start: Point
     end: Point
 
+    def __hash__(self) -> int:
+        """ Hash based on start and end point """
+        point_tuples = {
+            (p.x, p.y) for p in (self.start, self.end)
+        }
+        return hash(frozenset(point_tuples))
+
 
 class Orientation(Enum):
     """

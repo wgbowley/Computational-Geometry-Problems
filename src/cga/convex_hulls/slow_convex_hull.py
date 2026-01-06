@@ -13,14 +13,12 @@ Description:
     for large sets
 """
 
-from primitives.definitions import Point, Line, Orientation
-from primitives.orientation_test import test_orientation
-from primitives.order_clockwise import order_clockwise
+from cga.primitives.definitions import Point, Line, Orientation
+from cga.primitives.orientation_test import test_orientation
+from cga.primitives.order_clockwise import order_clockwise
 
 
-def slow_convex_hull(
-    vertices: list[Point]
-) -> list[Point]:
+def slow_convex_hull(vertices: list[Point]) -> list[Point]:
     """
     Checks every point until a right turn,
     than adds that point to a edge list.
@@ -39,7 +37,7 @@ def slow_convex_hull(
             AB = Line(p, q)
 
             for r in vertices:
-                if r == p or r == q:
+                if r in (p, q):
                     continue
 
                 test = test_orientation(AB, r)

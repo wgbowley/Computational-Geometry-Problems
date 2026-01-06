@@ -5,14 +5,15 @@ Install script -> Just do pip install -e .  (for editing)
 from setuptools import setup, find_packages
 
 setup(
-    name='cgp',
+    name='cga',
     version='0.1',
     description=(
-        'library of algorithmic implementations'
+        'library of computational geometry implementations'
     ),
     author='William Bowley',
     author_email='wgrantbowley@gmail.com',
-    packages=find_packages(include=["primitives"]),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=[],
     classifiers=[
         'Programming Language :: Python :: 3',

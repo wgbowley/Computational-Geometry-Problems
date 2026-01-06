@@ -10,7 +10,7 @@ Description:
 """
 
 from math import atan2
-from primitives.definitions import Point
+from cga.primitives.definitions import Point
 
 
 def order_clockwise(points: list[Point]) -> list[Point]:

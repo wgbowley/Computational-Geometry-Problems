@@ -14,7 +14,7 @@ Description:
         - Collinear with the line
 """
 
-from primitives.definitions import Point, Line, Orientation
+from cga.primitives.definitions import Point, Line, Orientation
 
 
 def test_orientation(
